@@ -8,13 +8,13 @@
 
 .main-container {
 	background-color: #F9F9F9;
-
-	width: 100%;
+	overflow-x: hidden;
+	position: relative;
 }
 
 .first-section {
 	background-color: hsl(193, 100%, 96%);
-	width: 100%;
+	
 }
 
 .bg-mobile {
@@ -191,16 +191,102 @@ p {
 	padding-top: 50%;
 }
 
-.logo-img-bottom path {
-	display: inline;
-	fill: #232323;
-}
+.logo-img-bottom {
+	padding-left: 10%;
+	margin-bottom: 8%;
 }
 
+.footer-grid {
+	display: grid;
+	grid-template-rows: 2;
+	grid-template-columns: 3;
+	grid-template-areas: "location location-text"
+	"phone phone-text"
+	"email email-text";
+}
+
+.location-icon {
+	grid-area: location;
+	padding: 10% 30% 0 35%;
+}
+
+.location-text {
+	grid-area: location-text;
+	color: hsl(193, 100%, 96%);
+
+}
+
+.phone-icon {
+	grid-area: phone;
+	padding: 10% 30% 0 35%;
+}
+
+.phone-text {
+	grid-area: phone-text;
+	color: hsl(193, 100%, 96%);
+}
+
+.email-icon {
+	grid-area: email;
+	padding: 10% 30% 0 35%;
+
+}
+
+.email-text {
+	grid-area: email-text;
+	color: hsl(193, 100%, 96%);
+}
+
+.links-list {
+	padding: 5% 10% 5% 4%;
+	line-height: 2rem;
+	list-style: none;
+}
+
+.links-list li a{
+	text-decoration: none;
+	color: hsl(193, 100%, 96%);
+	list-style: none;
+}
+
+.social-links {
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social-links a {
+  height: 30px;
+  padding: 0% 4%;
+
+}
+
+.social-links a img {
+  height: 100%;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+  padding: 10%;
+}
+
+.footer-p {
+	text-align: center;
+	color: hsl(193, 100%, 96%);
+	font-size: 0.8rem;
+}
+
+
+
+
 .attribution { 
+	width: 100%;
 	font-size: 11px; text-align: center; 
+	background-color: hsl(192, 100%, 9%);
 }
 
 .attribution a { 
-	color: hsl(228, 45%, 44%); 
+	color: hsl(193, 100%, 96%); 
+
 }
