@@ -21,14 +21,19 @@
 	position: absolute;
 }
 
+.bg-desktop {
+	display: none;
+}
+
 .header-section {
   width: 90%;
 	margin: 0 auto;
 	text-align: right;
 	display: grid;
-	grid-template-columns: 2;
+	grid-template-columns: 6;
 	grid-template-rows: 1;
-	grid-template-areas: "logo button";
+	grid-template-areas: "logo . . . . button";
+
 }
 
 .logo-img {
@@ -41,7 +46,7 @@
 
 .first-button {
 	position: relative;
-	margin-top: 13%;
+	margin-top:15%;
 	grid-area: button;
 	border-radius: 20px;
 	border-width: 0px;
@@ -104,6 +109,7 @@ h1 {
 	width: 82%;
 	position: relative;
 	padding-top: 20%;
+	padding-left: 9%;
 }
 
 .second-section {
@@ -193,6 +199,7 @@ p {
 	font-weight: 700;
 	margin-bottom: 10%;
 	font-size: 0.7rem;
+	box-shadow: 0 20px 32px rgba(0,0,0,0.11);
 }
 
 .third-button:hover {
@@ -304,6 +311,200 @@ p {
 	width: 100%;
 	font-size: 11px; text-align: center; 
 	background-color: hsl(192, 100%, 9%);
+}
+
+@media only screen and (min-width: 768px) {
+
+	.bg-mobile {
+		display: none;
+	}
+
+	.bg-desktop {
+		display: block;
+		position: absolute;
+	}
+
+
+	.first-section {
+		padding-bottom: 6%;
+		margin-bottom: -3%;
+	}
+
+	.flex-container {
+		display: flex;
+	}
+
+	.first-button {
+		height: 60%;
+	}
+
+	h1 {
+		font-size: 1.6rem;
+		text-align: left;
+	}
+
+	.first-h2 {
+		font-size: 1.1rem;
+		text-align: left;
+	}
+
+	.second-button {
+		width: 45%;
+		padding: 2% 0;
+		border-radius: 50px;
+	}
+
+	.second-button-container {
+		text-align: left;
+		padding-left: 11%;
+	}
+
+	.second-section {
+		width: 70%;
+		display: flex;
+		flex-direction: row-reverse;
+		padding: 6%;
+		margin-bottom: -12%;
+	}
+
+	.grow-together-img {
+		width: 48%;
+	}
+
+	.third-section {
+		width: 70%;
+		display: flex;
+		flex-direction: row;
+		padding: 6%;
+		margin-bottom: -12%;
+	}
+
+	.flowing-conv-img {
+		width: 48%;
+		padding-right: 10%;
+	}
+
+	.fourth-section {
+		width: 70%;
+		display: flex;
+		flex-direction: row-reverse;
+		padding: 6%;
+		margin-bottom: -38%;
+	}
+
+	.your-users-img {
+		width: 48%;
+	}
+
+	.second-section h2, .third-section h2, .fourth-section h2 {
+		text-align: left;
+		font-size: 2rem;
+	}
+
+	p {
+		text-align: left;
+		margin: 0;
+	}
+
+	.bottom-box {
+		width: 50%;
+		margin: 50% 22%;
+	}
+
+	.bottom-box h2 {
+		font-size: 2rem;
+	}
+
+	.third-button {
+		width: 80%;
+		font-size: 1.6rem;
+		padding: 3% 0;
+		border-radius: 50px;
+	}
+
+	.footer-content {
+		margin-top: 60%;
+		padding-top: 30%;
+		padding-left: 1%;
+	}
+
+	.footer-grid {
+		display: grid;
+		grid-template-rows: 2;
+		grid-template-columns: 8;
+		grid-template-areas: " . . . location location-text  . . ."
+	  ". . . phone phone-text . . ."
+	  ". . . email email-text . . .";
+	 width: 40%;
+	 padding-left: 15%;
+}
+
+	.location-icon {
+		padding: 0 40% 10% 30%;
+	}
+
+	.location-text {
+		padding: 0 9% 3% 0;
+	}
+
+	.phone-icon {
+		padding: 0 40% 10% 30%;
+	}
+
+	.phone-text {
+		padding: 0 9% 3% 0;
+	}
+
+	.email-icon {
+		padding: 0 40% 10% 30%;
+	}
+
+	.email-text {
+		padding: 0 9% 3% 0;
+	}
+
+	.logo-img-bottom {
+		padding-left: 15%;
+		margin-bottom: 4%;
+	}
+
+	.grid-container-footer {
+		display: grid;
+		grid-template-columns: 3;
+		grid-template-rows: 3;
+		grid-template-areas: " first fourth  socials "
+		" second fifth . "
+		" third sixth . ";
+	}
+
+	.link1 {
+		grid-area: first;
+	}
+
+	.link2 {
+		grid-area: second;
+	}
+
+	.link3 {
+		grid-area: third;
+	}
+
+	.link4 {
+		grid-area: fourth;
+	}
+
+	.link5 {
+		grid-area: fifth;
+	}
+
+	.link6 {
+		grid-area: sixth;
+	}
+
+	.social-links {
+		grid-area: socials;
+	}
+
 }
 
 .attribution a { 
