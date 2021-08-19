@@ -437,10 +437,56 @@ p {
 	  ". . . email email-text . . .";
 	 width: 40%;
 	 padding-left: 15%;
-}
+	 grid-area: info;
+  }
+
+  .links-list {
+  	display: grid;
+  	grid-template-rows: 3;
+  	grid-template-columns: 2;
+  	grid-template-areas: "first fourth"
+  	"second fifth"
+  	"third sixth";
+  	font-size: 0.8rem;
+  }
+
+  .link1 {
+  	grid-area: first;	
+  	width: 90px;
+  	
+  }
+
+  .link2 {
+  	grid-area: second;
+  	width: 90px;
+  }
+
+  .link3 {
+  	grid-area: third;
+  	width: 90px;
+  	padding-right: 20%;
+  	padding-bottom: 30%;
+  }
+
+  .link4 {
+  	grid-area: fourth;
+  	width: 90px;
+  }
+
+  .link5 {
+  	grid-area: fifth;
+  	width: 90px;
+  	padding-right: 20%;
+  }
+
+  .link6 {
+  	grid-area: sixth;
+  	width: 90px;
+
+  }
 
 	.location-icon {
-		padding: 0 40% 10% 30%;
+		padding: 0 40% 20% 30%;
 	}
 
 	.location-text {
@@ -448,7 +494,7 @@ p {
 	}
 
 	.phone-icon {
-		padding: 0 40% 10% 30%;
+		padding: 0 40% 20% 30%;
 	}
 
 	.phone-text {
@@ -456,7 +502,7 @@ p {
 	}
 
 	.email-icon {
-		padding: 0 40% 10% 30%;
+		padding: 0 40% 20% 30%;
 	}
 
 	.email-text {
@@ -468,41 +514,29 @@ p {
 		margin-bottom: 4%;
 	}
 
+	.full-footer {
+		display: flex;
+		
+	}
+
 	.grid-container-footer {
-		display: grid;
-		grid-template-columns: 3;
-		grid-template-rows: 3;
-		grid-template-areas: " first fourth  socials "
-		" second fifth . "
-		" third sixth . ";
-	}
-
-	.link1 {
-		grid-area: first;
-	}
-
-	.link2 {
-		grid-area: second;
-	}
-
-	.link3 {
-		grid-area: third;
-	}
-
-	.link4 {
-		grid-area: fourth;
-	}
-
-	.link5 {
-		grid-area: fifth;
-	}
-
-	.link6 {
-		grid-area: sixth;
+		display: flex;
+  	align-items: center;
+  	justify-content: center;
 	}
 
 	.social-links {
-		grid-area: socials;
+		margin-right: 10%;
+	}
+
+	.social-links a  {
+		padding: 10%;
+
+	}
+
+	.footer-p {
+		margin: 5% auto -1% auto;
+		text-align: right;
 	}
 
 }
